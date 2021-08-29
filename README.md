@@ -9,11 +9,11 @@ This is an inofficial M3U File to support Replay TV with TV7 on Kodi using the S
 # Configuration in the Simple IPTV PVR Client
 
 * Install the PVR IPTV Simple Client in Kodi.
-* Use the URL https://bit.ly/3Dwd606 as M3u playlist URL.
+* Use the Path to the file you've generated as m3u URL.
 
 ![general](./images/general.png)
 
-* Use the URL https://goo.gl/rNBpPG from [mathewmeconry's EPG Data](https://github.com/mathewmeconry/TV7_EPG_Data)
+* Use the Path to the file you've generated as EPG URL.
 
 ![general](./images/epg.png)
 
@@ -34,4 +34,4 @@ This is an inofficial M3U File to support Replay TV with TV7 on Kodi using the S
     docker run -it --rm -v DESTINATION:/app/output nicam/tv7-kodi-replay "epg-generator"
 
 
-The file `TV7-replay.m3u` has been created.
+The files will be stored in the `DESTINATION` directory.
