@@ -18,9 +18,10 @@ for (let i = 1; i < parts.length; i+=2) {
       '#EXTINF:0',
       `#EXTINF:0 catchup="default" catchup-source="https://tv7api2.tv.init7.net/api/replay/?channel=${channel.pk}&start={utc:Y-m-dTH:M:S}Z&stop={utcend:Y-m-dTH:M:SZ}" catchup-days="7",`
     )
+    parts[i+1] = channel.hls_src
   }
 }
 
-fs.writeFileSync('TV7-replay.m3u', parts.join('\n'));
+fs.writeFileSync('output/TV7-replay.m3u', parts.join('\n'));
 
 console.log('M3U File written');

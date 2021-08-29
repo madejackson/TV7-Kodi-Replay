@@ -27,15 +27,11 @@ This is an inofficial M3U File to support Replay TV with TV7 on Kodi using the S
 
 # Known caveats
 * timing isn't perfect: Since the EPG usually is not 100% accurate the show might not immediately start when you'd expect.
-* epg only works for the current day: this is related to the EPG not going much into the past. I opened an [issue](https://github.com/mathewmeconry/TV7_EPG_Data/issues/9) to improve that
 
-# Manually building the file
-    npm install
-    npm run m3u
+# Generating the files with docker
 
+    docker run -it --rm -v DESTINATION:/app/output nicam/tv7-kodi-replay "m3u-generator"
+    docker run -it --rm -v DESTINATION:/app/output nicam/tv7-kodi-replay "epg-generator"
 
-# Manually building the epg
-    npm install
-    npm run epg
 
 The file `TV7-replay.m3u` has been created.

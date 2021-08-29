@@ -77,7 +77,7 @@ xw.endElement();
 xw.endDocument();
 
 zlib.gzip(xw.toString(), function(error, data) {
-  fs.writeFileSync('egp.xml.gz', data);
+  fs.writeFileSync('output/epg.xml.gz', data);
   console.log('XML File written');
 });
 
