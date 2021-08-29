@@ -5,11 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "node m3u-generator.js"
+    "m3u": "node m3u-generator.js",
+    "epg": "node epg-generator.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "cli-progress": "^3.9.0",
+    "node-fetch": "^2.6.1",
+    "xml-writer": "^1.7.0",
+    "zlib": "^1.0.5"
   }
 }

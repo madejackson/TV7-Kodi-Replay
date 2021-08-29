@@ -31,6 +31,11 @@ This is an inofficial M3U File to support Replay TV with TV7 on Kodi using the S
 
 # Manually building the file
     npm install
-    npm run build
+    npm run m3u
+
+
+# Manually building the epg
+    npm install
+    npm run epg
 
 The file `TV7-replay.m3u` has been created.
