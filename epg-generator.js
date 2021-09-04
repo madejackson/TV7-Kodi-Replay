@@ -53,6 +53,7 @@ for (let channel of channels.results) {
           .writeAttribute('start', getXMLTVTimeFromUTC(result.timeslot.lower))
           .writeAttribute('stop', getXMLTVTimeFromUTC(result.timeslot.upper))
           .writeAttribute('channel', channel.pk)
+          .writeAttribute('catchup-id', result.pk)
           .startElement('title').text(result.title).endElement();
         if (result['sub_title']) {
           xw.startElement('sub-title').text(result['sub_title']).endElement();

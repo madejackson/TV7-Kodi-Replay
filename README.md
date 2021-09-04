@@ -20,7 +20,6 @@ This is an inofficial M3U File to support Replay TV with TV7 on Kodi using the S
 * Configure Catch up
   * Enable catchup
   * catchup window `7 days`
-  * catchup correct `2.0 hours`
   * include channels `with catchup mode`
 
 ![general](./images/catchup.png)

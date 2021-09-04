@@ -16,7 +16,7 @@ for (let i = 1; i < parts.length; i+=2) {
   if (channel && channel.has_replay) {
     parts[i] = parts[i].replace(
       '#EXTINF:0',
-      `#EXTINF:0 catchup="default" catchup-source="https://tv7api2.tv.init7.net/api/replay/?channel=${channel.pk}&start={utc:Y-m-dTH:M:S}Z&stop={utcend:Y-m-dTH:M:SZ}" catchup-days="7",`
+      `#EXTINF:0 catchup="default" catchup-source="https://tv7api2.tv.init7.net/api/replay/?channel=${channel.pk}&epg_pk={catchup-id}" catchup-days="7",`
     )
     parts[i+1] = channel.hls_src
   }
