@@ -4,7 +4,7 @@ import XMLWriter from 'xml-writer';
 import cliProgress from 'cli-progress';
 import zlib from 'zlib';
 
-const egpPageSize = 1000;
+const egpPageSize = 2000;
 
 function getXMLTVTimeFromUTC(utcString) {
   // Hackys way to convert the time from UTC string to XML TV
@@ -67,7 +67,7 @@ for (let channel of channels.results) {
         xw.endElement();
     }
     page++;
-  } while (epg.count === 1000)
+  } while (epg.count === 2000)
 
 
   progress.increment();
